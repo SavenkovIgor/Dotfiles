@@ -1,0 +1,27 @@
+[user]
+    name = Savenkov Igor
+    email = savenkovigor.dev@gmail.com
+[init]
+    defaultBranch = main
+[fetch]
+    prune = true
+[core]
+    editor = code --wait
+    fsmonitor = true
+[rerere]
+    enabled = true
+    autoUpdate = true
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
+[alias]
+    fpush = push --force-with-lease
+    fixup = commit --fixup
+    ffixup = "!f() { git commit --fixup $(git log -1 --format=\"%H\" -- \"$1\"); }; f"
+    rsquash = rebase --autosquash
+    new = switch -c
+[rebase]
+    updateRefs = true
+[push]
+    autoSetupRemote = true
