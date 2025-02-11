@@ -17,6 +17,7 @@
     sort = -committerdate
 [alias]
     st = status
+    sstash = stash --staged
     fpush = push --force-with-lease
     fixup = commit --fixup
     ffixup = "!f() { git commit --fixup $(git log -1 --format=\"%H\" -- \"$1\"); }; f"
