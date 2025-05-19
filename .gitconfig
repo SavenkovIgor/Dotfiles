@@ -23,6 +23,7 @@
     ffixup = "!f() { git commit --fixup $(git log -1 --format=\"%H\" -- \"$1\"); }; f"
     rsquash = rebase --autosquash
     new = switch -c
+    irebase = rebase --interactive
 [rebase]
     updateRefs = true
 [push]
