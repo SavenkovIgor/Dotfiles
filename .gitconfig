@@ -3,8 +3,6 @@
     email = savenkovigor.dev@gmail.com
 [init]
     defaultBranch = main
-[fetch]
-    prune = true
 [core]
     editor = code --wait
     fsmonitor = true
@@ -28,3 +26,5 @@
     updateRefs = true
 [push]
     autoSetupRemote = true
+[fetch]
+    prune = true
