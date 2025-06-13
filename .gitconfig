@@ -8,11 +8,11 @@
     fsmonitor = true
 [column]
     ui = auto
+[branch]
+    sort = -committerdate
 [rerere]
     enabled = true
     autoUpdate = true
-[branch]
-    sort = -committerdate
 [alias]
     st = status
     sstash = stash --staged
