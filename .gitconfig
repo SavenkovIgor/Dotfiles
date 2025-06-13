@@ -6,11 +6,11 @@
 [core]
     editor = code --wait
     fsmonitor = true
+[column]
+    ui = auto
 [rerere]
     enabled = true
     autoUpdate = true
-[column]
-    ui = auto
 [branch]
     sort = -committerdate
 [alias]
