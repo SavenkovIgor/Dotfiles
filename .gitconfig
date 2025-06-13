@@ -17,6 +17,13 @@
     colorMoved = plain
     mnemonicPrefix = true
     renames = true
+[push]
+    autoSetupRemote = true
+    followTags = true
+[fetch]
+    prune = true
+
+
 [rerere]
     enabled = true
     autoUpdate = true
@@ -31,8 +38,3 @@
     irebase = rebase --interactive
 [rebase]
     updateRefs = true
-[push]
-    autoSetupRemote = true
-    followTags = true
-[fetch]
-    prune = true
