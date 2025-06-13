@@ -1,8 +1,6 @@
 [user]
     name = Savenkov Igor
     email = savenkovigor.dev@gmail.com
-[init]
-    defaultBranch = main
 [core]
     editor = code --wait
     fsmonitor = true
@@ -12,6 +10,8 @@
     sort = -committerdate
 [tag]
     sort = version:refname
+[init]
+    defaultBranch = main
 [rerere]
     enabled = true
     autoUpdate = true
