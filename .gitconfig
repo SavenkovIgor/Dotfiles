@@ -33,8 +33,8 @@
     fpush = push --force-with-lease
     fixup = commit --fixup
     ffixup = "!f() { git commit --fixup $(git log -1 --format=\"%H\" -- \"$1\"); }; f"
-    rsquash = rebase --autosquash
     new = switch -c
-    irebase = rebase --interactive
+    irebase = "!f() { git rebase --interactive --autosquash $(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'); }; f"
+    autorebase = "!f() { git rebase --autosquash $(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'); }; f"
 [rebase]
     updateRefs = true
