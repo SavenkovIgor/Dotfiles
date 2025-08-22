@@ -1,32 +1,40 @@
 [user]
     name = Savenkov Igor
     email = savenkovigor.dev@gmail.com
+
 [core]
     editor = code --wait
     fsmonitor = true
+
 [column]
     ui = auto
+
 [branch]
     sort = -committerdate
+
 [tag]
     sort = version:refname
+
 [init]
     defaultBranch = main
+
 [diff]
     algorithm = histogram
     colorMoved = plain
     mnemonicPrefix = true
     renames = true
+
 [push]
     autoSetupRemote = true
     followTags = true
+
 [fetch]
     prune = true
-
 
 [rerere]
     enabled = true
     autoUpdate = true
+
 [alias]
     st = status
     sstash = stash --staged
@@ -36,5 +44,6 @@
     new = switch -c
     irebase = "!f() { git rebase --interactive --autosquash $(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'); }; f"
     autorebase = "!f() { git rebase --autosquash $(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'); }; f"
+
 [rebase]
     updateRefs = true
