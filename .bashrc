@@ -1,3 +1,6 @@
+# Filesystem
+alias ll='ls -la'
+
 # Git related aliases
 alias gst='git status'
 
