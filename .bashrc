@@ -37,3 +37,6 @@ alias ..='cd ..'
 
 # Prompt customization
 PS1='\[\033[32m\]\h:\[\033[36m\]\u\[\033[m\] \[\033[33;1m\]\w\[\033[m\]\$ '
+
+# uv
+[ -d "$HOME/uv" ] && export PATH="$PATH:$HOME/uv"
