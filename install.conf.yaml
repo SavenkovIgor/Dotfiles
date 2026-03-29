@@ -7,6 +7,9 @@
 - link:
     ~/.bashrc: .bashrc
     ~/.gitconfig: .gitconfig
+    ~/.copilot/skills:
+      create: true
+      path: .copilot/skills
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
